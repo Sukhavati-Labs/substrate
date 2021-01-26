@@ -259,4 +259,12 @@ zeroize = { opt-level = 3 }
 panic = "unwind"
 
 [patch.crates-io]
-parity-scale-codec = { path = "../parity-scale-codec" }
+trie-bench = { git = "https://github.com/paritytech/trie", branch = "gui-update-codec-to-2.0" }
+memory-db = { git = "https://github.com/paritytech/trie", branch = "gui-update-codec-to-2.0" }
+kvdb = { git = "https://github.com/paritytech/parity-common", branch = "gui-update-parity-scale-codec" }
+kvdb-rocksdb = { git = "https://github.com/paritytech/parity-common", branch = "gui-update-parity-scale-codec" }
+kvdb-memorydb = { git = "https://github.com/paritytech/parity-common", branch = "gui-update-parity-scale-codec" }
+kvdb-web = { git = "https://github.com/paritytech/parity-common", branch = "gui-update-parity-scale-codec" }
+parity-util-mem = { git = "https://github.com/paritytech/parity-common", branch = "gui-update-parity-scale-codec" }
+primitive-types = { git = "https://github.com/paritytech/parity-common", branch = "gui-update-parity-scale-codec" }
+finality-grandpa = { git = "https://github.com/paritytech/finality-grandpa" }
