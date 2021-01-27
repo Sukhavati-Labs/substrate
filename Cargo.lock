@@ -2132,12 +2132,6 @@ dependencies = [
 [[package]]
 name = "hash-db"
 version = "0.15.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d23bd4e7b5eda0d0f3a307e8b381fdc8ba9000f26fbe912250c0a4cc3956364a"
-
-[[package]]
-name = "hash-db"
-version = "0.15.2"
 source = "git+https://github.com/paritytech/trie?branch=gui-update-codec-to-2.0#6d89f561c6b51179bdd4dd24fdef213a625dc74e"
 
 [[package]]
@@ -2727,7 +2721,7 @@ version = "0.15.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "711adba9940a039f4374fc5724c0a5eaca84a2d558cce62256bfe26f0dbef05e"
 dependencies = [
- "hash-db 0.15.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hash-db",
  "hash256-std-hasher 0.15.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "tiny-keccak",
 ]
@@ -2737,7 +2731,7 @@ name = "keccak-hasher"
 version = "0.15.3"
 source = "git+https://github.com/paritytech/trie?branch=gui-update-codec-to-2.0#6d89f561c6b51179bdd4dd24fdef213a625dc74e"
 dependencies = [
- "hash-db 0.15.2 (git+https://github.com/paritytech/trie?branch=gui-update-codec-to-2.0)",
+ "hash-db",
  "hash256-std-hasher 0.15.2 (git+https://github.com/paritytech/trie?branch=gui-update-codec-to-2.0)",
  "tiny-keccak",
 ]
@@ -3467,7 +3461,7 @@ name = "memory-db"
 version = "0.26.0"
 source = "git+https://github.com/paritytech/trie?branch=gui-update-codec-to-2.0#6d89f561c6b51179bdd4dd24fdef213a625dc74e"
 dependencies = [
- "hash-db 0.15.2 (git+https://github.com/paritytech/trie?branch=gui-update-codec-to-2.0)",
+ "hash-db",
  "hashbrown",
  "parity-util-mem",
 ]
@@ -3717,7 +3711,7 @@ dependencies = [
  "derive_more",
  "fs_extra",
  "futures 0.3.9",
- "hash-db 0.15.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hash-db",
  "hex",
  "kvdb",
  "kvdb-rocksdb",
@@ -6557,7 +6551,7 @@ dependencies = [
  "derive_more",
  "fnv",
  "futures 0.3.9",
- "hash-db 0.15.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hash-db",
  "kvdb",
  "kvdb-memorydb",
  "lazy_static",
@@ -6592,7 +6586,7 @@ name = "sc-client-db"
 version = "0.8.1"
 dependencies = [
  "blake2-rfc",
- "hash-db 0.15.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hash-db",
  "kvdb",
  "kvdb-memorydb",
  "kvdb-rocksdb",
@@ -7088,7 +7082,7 @@ dependencies = [
 name = "sc-light"
 version = "2.0.1"
 dependencies = [
- "hash-db 0.15.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hash-db",
  "lazy_static",
  "parity-scale-codec",
  "parking_lot 0.11.1",
@@ -7270,7 +7264,7 @@ dependencies = [
  "assert_matches",
  "futures 0.1.30",
  "futures 0.3.9",
- "hash-db 0.15.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hash-db",
  "jsonrpc-core",
  "jsonrpc-pubsub",
  "lazy_static",
@@ -7369,7 +7363,7 @@ dependencies = [
  "futures 0.1.30",
  "futures 0.3.9",
  "futures-timer 3.0.2",
- "hash-db 0.15.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hash-db",
  "jsonrpc-core",
  "jsonrpc-pubsub",
  "lazy_static",
@@ -7998,7 +7992,7 @@ dependencies = [
 name = "sp-api"
 version = "2.0.1"
 dependencies = [
- "hash-db 0.15.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hash-db",
  "parity-scale-codec",
  "sp-api-proc-macro",
  "sp-core",
@@ -8246,7 +8240,7 @@ dependencies = [
  "dyn-clonable",
  "ed25519-dalek",
  "futures 0.3.9",
- "hash-db 0.15.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hash-db",
  "hash256-std-hasher 0.15.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "hex",
  "hex-literal",
@@ -8354,7 +8348,7 @@ name = "sp-io"
 version = "2.0.1"
 dependencies = [
  "futures 0.3.9",
- "hash-db 0.15.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hash-db",
  "libsecp256k1",
  "log",
  "parity-scale-codec",
@@ -8603,7 +8597,7 @@ dependencies = [
 name = "sp-state-machine"
 version = "0.8.1"
 dependencies = [
- "hash-db 0.15.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hash-db",
  "hex-literal",
  "log",
  "num-traits",
@@ -8709,7 +8703,7 @@ name = "sp-trie"
 version = "2.0.1"
 dependencies = [
  "criterion",
- "hash-db 0.15.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hash-db",
  "hex-literal",
  "memory-db",
  "parity-scale-codec",
@@ -8976,7 +8970,7 @@ version = "2.0.1"
 dependencies = [
  "futures 0.1.30",
  "futures 0.3.9",
- "hash-db 0.15.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hash-db",
  "hex",
  "parity-scale-codec",
  "sc-client-api",
@@ -9692,7 +9686,7 @@ version = "0.27.0"
 source = "git+https://github.com/paritytech/trie?branch=gui-update-codec-to-2.0#6d89f561c6b51179bdd4dd24fdef213a625dc74e"
 dependencies = [
  "criterion",
- "hash-db 0.15.2 (git+https://github.com/paritytech/trie?branch=gui-update-codec-to-2.0)",
+ "hash-db",
  "keccak-hasher 0.15.3 (git+https://github.com/paritytech/trie?branch=gui-update-codec-to-2.0)",
  "memory-db",
  "parity-scale-codec",
@@ -9707,7 +9701,7 @@ version = "0.22.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5cc176c377eb24d652c9c69c832c832019011b6106182bf84276c66b66d5c9a6"
 dependencies = [
- "hash-db 0.15.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hash-db",
  "hashbrown",
  "log",
  "rustc-hex",
@@ -9719,7 +9713,7 @@ name = "trie-db"
 version = "0.22.2"
 source = "git+https://github.com/paritytech/trie?branch=gui-update-codec-to-2.0#6d89f561c6b51179bdd4dd24fdef213a625dc74e"
 dependencies = [
- "hash-db 0.15.2 (git+https://github.com/paritytech/trie?branch=gui-update-codec-to-2.0)",
+ "hash-db",
  "hashbrown",
  "log",
  "rustc-hex",
@@ -9732,7 +9726,7 @@ version = "0.16.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "652931506d2c1244d7217a70b99f56718a7b4161b37f04e7cd868072a99f68cd"
 dependencies = [
- "hash-db 0.15.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hash-db",
 ]
 
 [[package]]
@@ -9740,7 +9734,7 @@ name = "trie-root"
 version = "0.16.0"
 source = "git+https://github.com/paritytech/trie?branch=gui-update-codec-to-2.0#6d89f561c6b51179bdd4dd24fdef213a625dc74e"
 dependencies = [
- "hash-db 0.15.2 (git+https://github.com/paritytech/trie?branch=gui-update-codec-to-2.0)",
+ "hash-db",
 ]
 
 [[package]]
@@ -9749,7 +9743,7 @@ version = "0.15.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c3161ba520ab28cd8e6b68e1126f1009f6e335339d1a73b978139011703264c8"
 dependencies = [
- "hash-db 0.15.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hash-db",
  "keccak-hasher 0.15.3 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
@@ -9758,7 +9752,7 @@ name = "trie-standardmap"
 version = "0.15.2"
 source = "git+https://github.com/paritytech/trie?branch=gui-update-codec-to-2.0#6d89f561c6b51179bdd4dd24fdef213a625dc74e"
 dependencies = [
- "hash-db 0.15.2 (git+https://github.com/paritytech/trie?branch=gui-update-codec-to-2.0)",
+ "hash-db",
  "keccak-hasher 0.15.3 (git+https://github.com/paritytech/trie?branch=gui-update-codec-to-2.0)",
 ]
 
