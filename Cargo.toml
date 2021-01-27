@@ -267,13 +267,3 @@ trie-root = { git = "https://github.com/paritytech/trie", branch = "gui-update-c
 trie-standardmap = { git = "https://github.com/paritytech/trie", branch = "gui-update-codec-to-2.0" }
 keccak-hasher = { git = "https://github.com/paritytech/trie", branch = "gui-update-codec-to-2.0" }
 memory-db = { git = "https://github.com/paritytech/trie", branch = "gui-update-codec-to-2.0" }
-kvdb = { git = "https://github.com/paritytech/parity-common", branch = "gui-update-parity-scale-codec" }
-kvdb-rocksdb = { git = "https://github.com/paritytech/parity-common", branch = "gui-update-parity-scale-codec" }
-kvdb-memorydb = { git = "https://github.com/paritytech/parity-common", branch = "gui-update-parity-scale-codec" }
-kvdb-web = { git = "https://github.com/paritytech/parity-common", branch = "gui-update-parity-scale-codec" }
-parity-util-mem = { git = "https://github.com/paritytech/parity-common", branch = "gui-update-parity-scale-codec" }
-parity-util-mem-derive = { git = "https://github.com/paritytech/parity-common", branch = "gui-update-parity-scale-codec" }
-impl-serde = { git = "https://github.com/paritytech/parity-common", branch = "gui-update-parity-scale-codec" }
-uint = { git = "https://github.com/paritytech/parity-common", branch = "gui-update-parity-scale-codec" }
-primitive-types = { git = "https://github.com/paritytech/parity-common", branch = "gui-update-parity-scale-codec" }
-finality-grandpa = { git = "https://github.com/paritytech/finality-grandpa" }
